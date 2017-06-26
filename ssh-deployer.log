@@ -1,0 +1,74 @@
+{"_":[],"f":"deploy.json","file":"deploy.json","host":"192.168.46.112","username":"root","password":"Eur0m0nit0r","workspace":"./","$0":"C:\\Users\\Barend.Erasmus\\AppData\\Roaming\\npm\\node_modules\\ssh-deployer\\bin\\ssh-deployer","level":"debug","message":"Start","timestamp":"2017-06-26T06:26:28.582Z"}
+{"level":"info","message":"Successfully created '/opt/tech-radar-ui","timestamp":"2017-06-26T06:26:28.792Z"}
+{"level":"info","message":"Queuing 'dist/favicon.ico' to '/opt/tech-radar-ui/favicon.ico'","timestamp":"2017-06-26T06:26:28.795Z"}
+{"level":"info","message":"Successfully copied 'dist/favicon.ico' to '/opt/tech-radar-ui/favicon.ico'","timestamp":"2017-06-26T06:26:28.807Z"}
+{"level":"info","message":"Queuing 'dist/index.html' to '/opt/tech-radar-ui/index.html'","timestamp":"2017-06-26T06:26:28.809Z"}
+{"level":"info","message":"Successfully copied 'dist/index.html' to '/opt/tech-radar-ui/index.html'","timestamp":"2017-06-26T06:26:28.819Z"}
+{"level":"info","message":"Queuing 'dist/inline.fdc39c79c3e745b753a1.bundle.js' to '/opt/tech-radar-ui/inline.fdc39c79c3e745b753a1.bundle.js'","timestamp":"2017-06-26T06:26:28.824Z"}
+{"level":"info","message":"Successfully copied 'dist/inline.fdc39c79c3e745b753a1.bundle.js' to '/opt/tech-radar-ui/inline.fdc39c79c3e745b753a1.bundle.js'","timestamp":"2017-06-26T06:26:28.834Z"}
+{"level":"info","message":"Queuing 'dist/main.0a43776ae7cc7b03fa11.bundle.js' to '/opt/tech-radar-ui/main.0a43776ae7cc7b03fa11.bundle.js'","timestamp":"2017-06-26T06:26:28.839Z"}
+{"level":"info","message":"Successfully copied 'dist/main.0a43776ae7cc7b03fa11.bundle.js' to '/opt/tech-radar-ui/main.0a43776ae7cc7b03fa11.bundle.js'","timestamp":"2017-06-26T06:26:28.848Z"}
+{"level":"info","message":"Queuing 'dist/polyfills.07685bca73161be59257.bundle.js' to '/opt/tech-radar-ui/polyfills.07685bca73161be59257.bundle.js'","timestamp":"2017-06-26T06:26:28.853Z"}
+{"level":"info","message":"Successfully copied 'dist/polyfills.07685bca73161be59257.bundle.js' to '/opt/tech-radar-ui/polyfills.07685bca73161be59257.bundle.js'","timestamp":"2017-06-26T06:26:28.869Z"}
+{"level":"info","message":"Queuing 'dist/styles.d41d8cd98f00b204e980.bundle.css' to '/opt/tech-radar-ui/styles.d41d8cd98f00b204e980.bundle.css'","timestamp":"2017-06-26T06:26:28.874Z"}
+{"level":"info","message":"Successfully copied 'dist/styles.d41d8cd98f00b204e980.bundle.css' to '/opt/tech-radar-ui/styles.d41d8cd98f00b204e980.bundle.css'","timestamp":"2017-06-26T06:26:28.884Z"}
+{"level":"info","message":"Queuing 'dist/vendor.4641436a28647a182b60.bundle.js' to '/opt/tech-radar-ui/vendor.4641436a28647a182b60.bundle.js'","timestamp":"2017-06-26T06:26:28.888Z"}
+{"level":"info","message":"Successfully copied 'dist/vendor.4641436a28647a182b60.bundle.js' to '/opt/tech-radar-ui/vendor.4641436a28647a182b60.bundle.js'","timestamp":"2017-06-26T06:26:28.909Z"}
+{"level":"info","message":"Queuing './/Dockerfile' to '/docker-uploads/tech-radar-ui/Dockerfile'","timestamp":"2017-06-26T06:26:28.912Z"}
+{"level":"info","message":"Successfully copied './/Dockerfile' to '/docker-uploads/tech-radar-ui/Dockerfile'","timestamp":"2017-06-26T06:26:28.922Z"}
+{"level":"info","message":"Queuing './/nginx.conf' to '/docker-uploads/tech-radar-ui/nginx.conf'","timestamp":"2017-06-26T06:26:28.939Z"}
+{"level":"info","message":"Successfully copied './/nginx.conf' to '/docker-uploads/tech-radar-ui/nginx.conf'","timestamp":"2017-06-26T06:26:28.949Z"}
+{"code":1,"stdout":"","stderr":"Error response from daemon: No such container: tech-radar-ui","level":"error","message":"Error response from daemon: No such container: tech-radar-ui","timestamp":"2017-06-26T06:26:28.970Z"}
+{"level":"error","message":"ERROR -> 1","timestamp":"2017-06-26T06:26:28.971Z"}
+{"code":1,"stdout":"","stderr":"Error response from daemon: No such container: tech-radar-ui","level":"error","message":"Error response from daemon: No such container: tech-radar-ui","timestamp":"2017-06-26T06:26:28.988Z"}
+{"level":"error","message":"ERROR -> 1","timestamp":"2017-06-26T06:26:28.989Z"}
+{"level":"info","message":"Sending build context to Docker daemon  3.072kB\r\r\nStep 1/2 : FROM nginx\nlatest: Pulling from library/nginx\ne6e142a99202: Pulling fs layer\n8c317a037432: Pulling fs layer\naf2ddac66ed0: Pulling fs layer\naf2ddac66ed0: Verifying Checksum\naf2ddac66ed0: Download complete\ne6e142a99202: Verifying Checksum\ne6e142a99202: Download complete\ne6e142a99202: Pull complete\n8c317a037432: Verifying Checksum\n8c317a037432: Download complete\n8c317a037432: Pull complete\naf2ddac66ed0: Pull complete\nDigest: sha256:72c7191585e9b79cde433c89955547685db00f3a8595a750339549f6acef7702\nStatus: Downloaded newer image for nginx:latest\n ---> c246cd3dd41d\nStep 2/2 : COPY nginx.conf /etc/nginx/nginx.conf\n ---> 3dac8c9c7049\nRemoving intermediate container 90edf04ceeeb\nSuccessfully built 3dac8c9c7049\nSuccessfully tagged tech-radar-ui:latest","timestamp":"2017-06-26T06:26:52.526Z"}
+{"level":"info","message":"ccc2a75a3e3d4a6ddd59eca11f30687e1e2253f96e57953cdd0c983b96849b0e","timestamp":"2017-06-26T06:26:52.981Z"}
+{"_":[],"f":"deploy.json","file":"deploy.json","host":"192.168.46.112","username":"root","password":"Eur0m0nit0r","workspace":"./","$0":"C:\\Users\\Barend.Erasmus\\AppData\\Roaming\\npm\\node_modules\\ssh-deployer\\bin\\ssh-deployer","level":"debug","message":"Start","timestamp":"2017-06-26T06:27:40.018Z"}
+{"level":"info","message":"Successfully created '/opt/tech-radar-ui","timestamp":"2017-06-26T06:27:40.460Z"}
+{"level":"info","message":"Queuing 'dist/favicon.ico' to '/opt/tech-radar-ui/favicon.ico'","timestamp":"2017-06-26T06:27:40.463Z"}
+{"level":"info","message":"Successfully copied 'dist/favicon.ico' to '/opt/tech-radar-ui/favicon.ico'","timestamp":"2017-06-26T06:27:40.474Z"}
+{"level":"info","message":"Queuing 'dist/index.html' to '/opt/tech-radar-ui/index.html'","timestamp":"2017-06-26T06:27:40.477Z"}
+{"level":"info","message":"Successfully copied 'dist/index.html' to '/opt/tech-radar-ui/index.html'","timestamp":"2017-06-26T06:27:40.487Z"}
+{"level":"info","message":"Queuing 'dist/inline.fdc39c79c3e745b753a1.bundle.js' to '/opt/tech-radar-ui/inline.fdc39c79c3e745b753a1.bundle.js'","timestamp":"2017-06-26T06:27:40.492Z"}
+{"level":"info","message":"Successfully copied 'dist/inline.fdc39c79c3e745b753a1.bundle.js' to '/opt/tech-radar-ui/inline.fdc39c79c3e745b753a1.bundle.js'","timestamp":"2017-06-26T06:27:40.504Z"}
+{"level":"info","message":"Queuing 'dist/main.0a43776ae7cc7b03fa11.bundle.js' to '/opt/tech-radar-ui/main.0a43776ae7cc7b03fa11.bundle.js'","timestamp":"2017-06-26T06:27:40.525Z"}
+{"level":"info","message":"Successfully copied 'dist/main.0a43776ae7cc7b03fa11.bundle.js' to '/opt/tech-radar-ui/main.0a43776ae7cc7b03fa11.bundle.js'","timestamp":"2017-06-26T06:27:40.537Z"}
+{"level":"info","message":"Queuing 'dist/polyfills.07685bca73161be59257.bundle.js' to '/opt/tech-radar-ui/polyfills.07685bca73161be59257.bundle.js'","timestamp":"2017-06-26T06:27:40.543Z"}
+{"level":"info","message":"Successfully copied 'dist/polyfills.07685bca73161be59257.bundle.js' to '/opt/tech-radar-ui/polyfills.07685bca73161be59257.bundle.js'","timestamp":"2017-06-26T06:27:40.564Z"}
+{"level":"info","message":"Queuing 'dist/styles.d41d8cd98f00b204e980.bundle.css' to '/opt/tech-radar-ui/styles.d41d8cd98f00b204e980.bundle.css'","timestamp":"2017-06-26T06:27:40.570Z"}
+{"level":"info","message":"Successfully copied 'dist/styles.d41d8cd98f00b204e980.bundle.css' to '/opt/tech-radar-ui/styles.d41d8cd98f00b204e980.bundle.css'","timestamp":"2017-06-26T06:27:40.579Z"}
+{"level":"info","message":"Queuing 'dist/vendor.4641436a28647a182b60.bundle.js' to '/opt/tech-radar-ui/vendor.4641436a28647a182b60.bundle.js'","timestamp":"2017-06-26T06:27:40.596Z"}
+{"level":"info","message":"Successfully copied 'dist/vendor.4641436a28647a182b60.bundle.js' to '/opt/tech-radar-ui/vendor.4641436a28647a182b60.bundle.js'","timestamp":"2017-06-26T06:27:40.619Z"}
+{"level":"info","message":"Queuing './/Dockerfile' to '/docker-uploads/tech-radar-ui/Dockerfile'","timestamp":"2017-06-26T06:27:40.621Z"}
+{"level":"info","message":"Successfully copied './/Dockerfile' to '/docker-uploads/tech-radar-ui/Dockerfile'","timestamp":"2017-06-26T06:27:40.630Z"}
+{"level":"info","message":"Queuing './/nginx.conf' to '/docker-uploads/tech-radar-ui/nginx.conf'","timestamp":"2017-06-26T06:27:40.632Z"}
+{"level":"info","message":"Successfully copied './/nginx.conf' to '/docker-uploads/tech-radar-ui/nginx.conf'","timestamp":"2017-06-26T06:27:40.642Z"}
+{"level":"info","message":"tech-radar-ui","timestamp":"2017-06-26T06:27:40.802Z"}
+{"level":"info","message":"tech-radar-ui","timestamp":"2017-06-26T06:27:40.830Z"}
+{"level":"info","message":"Sending build context to Docker daemon  3.072kB\r\r\nStep 1/2 : FROM nginx\n ---> c246cd3dd41d\nStep 2/2 : COPY nginx.conf /etc/nginx/nginx.conf\n ---> fef3e677edf8\nRemoving intermediate container e5ec25a28553\nSuccessfully built fef3e677edf8\nSuccessfully tagged tech-radar-ui:latest","timestamp":"2017-06-26T06:27:41.043Z"}
+{"level":"info","message":"9f515e4fbc92500fee87ed4c21dfa11be35aea8174eb8005c787c320130cc675","timestamp":"2017-06-26T06:27:41.377Z"}
+{"_":[],"f":"deploy.json","file":"deploy.json","host":"192.168.46.112","username":"root","password":"Eur0m0nit0r","workspace":"./","$0":"C:\\Users\\Barend.Erasmus\\AppData\\Roaming\\npm\\node_modules\\ssh-deployer\\bin\\ssh-deployer","level":"debug","message":"Start","timestamp":"2017-06-26T06:29:50.364Z"}
+{"level":"info","message":"Successfully created '/opt/tech-radar-ui","timestamp":"2017-06-26T06:29:50.582Z"}
+{"level":"info","message":"Queuing 'dist/favicon.ico' to '/opt/tech-radar-ui/favicon.ico'","timestamp":"2017-06-26T06:29:50.585Z"}
+{"level":"info","message":"Successfully copied 'dist/favicon.ico' to '/opt/tech-radar-ui/favicon.ico'","timestamp":"2017-06-26T06:29:50.596Z"}
+{"level":"info","message":"Queuing 'dist/index.html' to '/opt/tech-radar-ui/index.html'","timestamp":"2017-06-26T06:29:50.600Z"}
+{"level":"info","message":"Successfully copied 'dist/index.html' to '/opt/tech-radar-ui/index.html'","timestamp":"2017-06-26T06:29:50.610Z"}
+{"level":"info","message":"Queuing 'dist/inline.fdc39c79c3e745b753a1.bundle.js' to '/opt/tech-radar-ui/inline.fdc39c79c3e745b753a1.bundle.js'","timestamp":"2017-06-26T06:29:50.616Z"}
+{"level":"info","message":"Successfully copied 'dist/inline.fdc39c79c3e745b753a1.bundle.js' to '/opt/tech-radar-ui/inline.fdc39c79c3e745b753a1.bundle.js'","timestamp":"2017-06-26T06:29:50.628Z"}
+{"level":"info","message":"Queuing 'dist/main.0a43776ae7cc7b03fa11.bundle.js' to '/opt/tech-radar-ui/main.0a43776ae7cc7b03fa11.bundle.js'","timestamp":"2017-06-26T06:29:50.644Z"}
+{"level":"info","message":"Successfully copied 'dist/main.0a43776ae7cc7b03fa11.bundle.js' to '/opt/tech-radar-ui/main.0a43776ae7cc7b03fa11.bundle.js'","timestamp":"2017-06-26T06:29:50.654Z"}
+{"level":"info","message":"Queuing 'dist/polyfills.07685bca73161be59257.bundle.js' to '/opt/tech-radar-ui/polyfills.07685bca73161be59257.bundle.js'","timestamp":"2017-06-26T06:29:50.660Z"}
+{"level":"info","message":"Successfully copied 'dist/polyfills.07685bca73161be59257.bundle.js' to '/opt/tech-radar-ui/polyfills.07685bca73161be59257.bundle.js'","timestamp":"2017-06-26T06:29:50.676Z"}
+{"level":"info","message":"Queuing 'dist/styles.d41d8cd98f00b204e980.bundle.css' to '/opt/tech-radar-ui/styles.d41d8cd98f00b204e980.bundle.css'","timestamp":"2017-06-26T06:29:50.682Z"}
+{"level":"info","message":"Successfully copied 'dist/styles.d41d8cd98f00b204e980.bundle.css' to '/opt/tech-radar-ui/styles.d41d8cd98f00b204e980.bundle.css'","timestamp":"2017-06-26T06:29:50.692Z"}
+{"level":"info","message":"Queuing 'dist/vendor.4641436a28647a182b60.bundle.js' to '/opt/tech-radar-ui/vendor.4641436a28647a182b60.bundle.js'","timestamp":"2017-06-26T06:29:50.698Z"}
+{"level":"info","message":"Successfully copied 'dist/vendor.4641436a28647a182b60.bundle.js' to '/opt/tech-radar-ui/vendor.4641436a28647a182b60.bundle.js'","timestamp":"2017-06-26T06:29:50.722Z"}
+{"level":"info","message":"Queuing './/Dockerfile' to '/docker-uploads/tech-radar-ui/Dockerfile'","timestamp":"2017-06-26T06:29:50.727Z"}
+{"level":"info","message":"Successfully copied './/Dockerfile' to '/docker-uploads/tech-radar-ui/Dockerfile'","timestamp":"2017-06-26T06:29:50.743Z"}
+{"level":"info","message":"Queuing './/nginx.conf' to '/docker-uploads/tech-radar-ui/nginx.conf'","timestamp":"2017-06-26T06:29:50.746Z"}
+{"level":"info","message":"Successfully copied './/nginx.conf' to '/docker-uploads/tech-radar-ui/nginx.conf'","timestamp":"2017-06-26T06:29:50.754Z"}
+{"level":"info","message":"tech-radar-ui","timestamp":"2017-06-26T06:29:50.871Z"}
+{"level":"info","message":"tech-radar-ui","timestamp":"2017-06-26T06:29:50.891Z"}
+{"level":"info","message":"Sending build context to Docker daemon  3.072kB\r\r\nStep 1/2 : FROM nginx\n ---> c246cd3dd41d\nStep 2/2 : COPY nginx.conf /etc/nginx/nginx.conf\n ---> 70853c0c614a\nRemoving intermediate container 6468d75f1c4f\nSuccessfully built 70853c0c614a\nSuccessfully tagged tech-radar-ui:latest","timestamp":"2017-06-26T06:29:51.106Z"}
+{"level":"info","message":"b19bb42a49c62016b4b2a45f28a8040a19350bc0c51ef559a72e4769ac148b06","timestamp":"2017-06-26T06:29:51.381Z"}

@@ -20,7 +20,7 @@ export class RadarComponent implements OnInit {
   private blipService: BlipService = null;
 
   private blips: Blip[] = null;
-  private data: Data = null;
+  public data: Data = null;
 
   constructor(http: Http) {
     this.blipService = new BlipService(http);

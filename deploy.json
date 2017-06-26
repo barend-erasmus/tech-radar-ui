@@ -1,0 +1,29 @@
+{
+    "machine": {
+        "host": "$host",
+        "username": "$username",
+        "password": "$password"
+    },
+    "commands": [
+        "docker stop tech-radar-ui",
+        "docker rm tech-radar-ui",
+        "docker build --no-cache -t tech-radar-ui /docker-uploads/tech-radar-ui",
+        "docker run -d -p 8084:4200 -v /opt/tech-radar-ui:/usr/share/nginx/html --name tech-radar-ui -t tech-radar-ui"
+    ],
+    "directories": [
+        {
+            "source": "$workspace/dist",
+            "destination": "/opt/tech-radar-ui"
+        }
+    ],
+    "files": [
+        {
+            "source": "$workspace/Dockerfile",
+            "destination": "/docker-uploads/tech-radar-ui/Dockerfile"
+        },
+        {
+            "source": "$workspace/nginx.conf",
+            "destination": "/docker-uploads/tech-radar-ui/nginx.conf"
+        }
+    ]
+}
