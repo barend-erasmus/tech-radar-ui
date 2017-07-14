@@ -4,7 +4,7 @@ import { Observable } from 'rxjs/Observable';
 
 export class BaseService {
 
-    private baseUri: string = 'http://192.168.46.112/techradarservice'
+    private baseUri: string = 'http://cpt.innovation.euromonitor.local/techradarservice'
 
     constructor(private http: Http) {
 
