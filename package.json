@@ -5,10 +5,11 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --aot --target=production --output-path=./dist",
+    "build": "ng build --aot --target=production --base-href \"/techradar\"  --deploy-url \"/techradar\" --output-path=./dist",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "deploy": "npm run build & ssh-deployer -f deploy.json --host host --username username --password password --workspace ./"
   },
   "private": true,
   "dependencies": {
