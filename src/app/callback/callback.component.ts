@@ -13,7 +13,7 @@ export class CallbackComponent implements OnInit {
   public ngOnInit(): void {
     this.activatedRoute.queryParams.subscribe((params: Params): void => {
       const accessToken: string = params['access_token'];
-      localStorage.setItem('token', accessToken);
+      localStorage.setItem('jwt.token', accessToken);
       this.router.navigateByUrl('/');
     });
   }

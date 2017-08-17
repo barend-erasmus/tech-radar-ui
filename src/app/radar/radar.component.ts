@@ -4,6 +4,7 @@ import { Component, OnInit } from '@angular/core';
 
 // Imports services
 import { BlipService } from './../services/blip.service';
+import { AuthService } from './../services/auth.service';
 
 // Imports models
 import { Blip } from './../models/blip';
@@ -18,16 +19,21 @@ import { Item } from './../models/item';
 export class RadarComponent implements OnInit {
 
   private blipService: BlipService = null;
+  private authService: AuthService = null;
 
   private blips: Blip[] = null;
   public data: Data = null;
 
+  public user: any = null;
+
   constructor(http: Http) {
     this.blipService = new BlipService(http);
+    this.authService = new AuthService(http);
   }
 
   ngOnInit() {
     this.loadBlips();
+    this.loadUser();
   }
 
   public onHover(event: any): void {
@@ -40,6 +46,12 @@ export class RadarComponent implements OnInit {
 
   public onClick(event: any): void {
     console.log(event);
+  }
+
+  private loadUser(): void {
+    this.authService.user().subscribe((result: any) => {
+      this.user = result;
+    });
   }
 
   private loadBlips(): void {

@@ -37,4 +37,18 @@ export class BaseService {
             headers,
         });
     }
+
+    protected getExternal(uri: string): Observable<Response> {
+        const headers = new Headers();
+
+        const jwtToken = localStorage.getItem('jwt.token');
+
+        if (jwtToken !== null || jwtToken === '') {
+            headers.append('Authorization', 'Bearer ' + jwtToken);
+        }
+
+        return this.http.get(`${uri}`, {
+            headers,
+        });
+    }
 }

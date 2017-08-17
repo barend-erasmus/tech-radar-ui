@@ -9,7 +9,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "deploy": "npm run build & ssh-deployer -f deploy.json --host host --username username --password password --workspace ./"
+    "deploy": "npm run build & ssh-deployer -f deploy.json --host 192.168.46.112 --username username --password password --workspace ./"
   },
   "private": true,
   "dependencies": {

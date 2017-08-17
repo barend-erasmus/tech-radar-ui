@@ -5,6 +5,8 @@ import { Headers, Http, RequestOptions, Response } from '@angular/http';
 import 'rxjs/add/operator/map';
 import { CanActivate, Router } from '@angular/router';
 
+import { environment } from './../../environments/environment';
+
 
 @Injectable()
 export class AuthGuard implements CanActivate {
@@ -13,7 +15,7 @@ export class AuthGuard implements CanActivate {
 
   canActivate() {
     return new Observable<boolean>(observer => {
-      const accessToken = localStorage.getItem('token');
+      const accessToken = localStorage.getItem('jwt.token');
 
       if (accessToken) {
         const headers = new Headers();
@@ -27,14 +29,14 @@ export class AuthGuard implements CanActivate {
               observer.next(true);
               observer.complete();
             } else {
-              window.location.href = 'http://cpt.innovation.euromonitor.local/auth/authorize?response_type=token&client_id=2KDgqcZ0bD&redirect_uri=http://cpt.innovation.euromonitor.local/techradar/callback&scope=admin&state=123456';
+              window.location.href = `http://cpt.innovation.euromonitor.local/auth/authorize?response_type=token&client_id=2KDgqcZ0bD&redirect_uri=${environment.domain}/callback&scope=admin&state=123456`;
               observer.next(false);
               observer.complete();
             }
           });
 
       } else {
-        window.location.href = 'http://cpt.innovation.euromonitor.local/auth/authorize?response_type=token&client_id=2KDgqcZ0bD&redirect_uri=http://cpt.innovation.euromonitor.local/techradar/callback&scope=admin&state=123456';
+        window.location.href = `http://cpt.innovation.euromonitor.local/auth/authorize?response_type=token&client_id=2KDgqcZ0bD&redirect_uri=${environment.domain}/callback&scope=admin&state=123456`;
         observer.next(false);
         observer.complete();
       }
