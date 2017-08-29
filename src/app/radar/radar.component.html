@@ -1,16 +1,28 @@
-<app-tech-radar-chart 
-    [data]="data"
-    [radius]="350"
-    (onHover)="onHover($event)"
-    (onMouseLeave)="onMouseLeave($event)"
-    (onClick)="onClick($event)">
+<app-tech-radar-chart [data]="data" [radius]="350" (onHover)="onHover($event)" (onMouseLeave)="onMouseLeave($event)" (onClick)="onClick($event)">
 </app-tech-radar-chart>
 <div class="card">
-    <div class="card-block">
-      <h4 class="card-title">Card title</h4>
-      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="card-link">Card link</a>
-      <a href="#" class="card-link">Another link</a>
+  <div class="card-block">
+    <h4 class="card-title">Add new Blip</h4>
+    <div class="form-group">
+      <label>Name</label>
+      <input type="text" class="form-control">
+    </div>
+    <div class="form-group">
+      <label>Description</label>
+      <textarea class="form-control" rows="4" cols="50"></textarea>
+    </div>
+    <div class="form-group">
+      <label>Quadrant</label>
+      <select class="form-control">
+        <option>Languages and Frameworks</option>
+        <option>Platforms</option>
+        <option>Tools</option>
+        <option>Techniques</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label>Offset</label>
+      <input type="number" class="form-control">
     </div>
   </div>
+</div>
