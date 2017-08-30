@@ -1,28 +1,3 @@
 <app-tech-radar-chart [data]="data" [radius]="350" (onHover)="onHover($event)" (onMouseLeave)="onMouseLeave($event)" (onClick)="onClick($event)">
 </app-tech-radar-chart>
-<div class="card">
-  <div class="card-block">
-    <h4 class="card-title">Add new Blip</h4>
-    <div class="form-group">
-      <label>Name</label>
-      <input type="text" class="form-control">
-    </div>
-    <div class="form-group">
-      <label>Description</label>
-      <textarea class="form-control" rows="4" cols="50"></textarea>
-    </div>
-    <div class="form-group">
-      <label>Quadrant</label>
-      <select class="form-control">
-        <option>Languages and Frameworks</option>
-        <option>Platforms</option>
-        <option>Tools</option>
-        <option>Techniques</option>
-      </select>
-    </div>
-    <div class="form-group">
-      <label>Offset</label>
-      <input type="number" class="form-control">
-    </div>
-  </div>
-</div>
+<app-create-blip (onCreate)="onCreate($event)"></app-create-blip>

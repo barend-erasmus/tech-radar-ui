@@ -1,0 +1,29 @@
+<div class="card">
+  <div class="card-block">
+    <h4 class="card-title">Add new Blip</h4>
+    <div class="form-group">
+      <label>Name</label>
+      <input [(ngModel)]="name" type="text" class="form-control">
+    </div>
+    <div class="form-group">
+      <label>Description</label>
+      <textarea [(ngModel)]="description" class="form-control" rows="4" cols="50"></textarea>
+    </div>
+    <div class="form-group">
+      <label>Quadrant</label>
+      <select [(ngModel)]="quadrant" class="form-control">
+        <option>Languages and Frameworks</option>
+        <option>Platforms</option>
+        <option>Tools</option>
+        <option>Techniques</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label>Offset</label>
+      <input [(ngModel)]="offset" type="number" class="form-control">
+    </div>
+    <div class="form-group">
+      <button type="button" class="btn btn-primary" (click)="onClick_Create()">Create</button>
+    </div>
+  </div>
+</div>

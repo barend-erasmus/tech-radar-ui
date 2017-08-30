@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
 // Imports components
 import { AppComponent } from './app.component';
@@ -13,6 +14,7 @@ import { CallbackComponent } from './callback/callback.component';
 
 // Imports gaurds
 import { AuthGuard } from './guards/auth.guard';
+import { CreateBlipComponent } from './create-blip/create-blip.component';
 
 const router = RouterModule.forRoot([
   {
@@ -34,11 +36,13 @@ const router = RouterModule.forRoot([
     TechRadarChartComponent,
     RadarComponent,
     HomeComponent,
-    CallbackComponent
+    CallbackComponent,
+    CreateBlipComponent
   ],
   imports: [
     BrowserModule,
     HttpModule,
+    FormsModule,
     router
   ],
   providers: [AuthGuard],

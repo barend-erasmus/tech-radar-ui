@@ -48,6 +48,10 @@ export class RadarComponent implements OnInit {
     console.log(event);
   }
 
+  public onCreate(): void {
+    this.loadBlips();
+  }
+
   private loadUser(): void {
     this.authService.user().subscribe((result: any) => {
       this.user = result;
